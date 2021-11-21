@@ -1,0 +1,9 @@
+Cette version, formellement juste, comporte tout de même deux faiblesses.
+
+La première, et la plus grave, concerne la manière dont elle calcule le résultat final. 
+Celui-ci est le quotient d'un nombre par un autre ; or, ces nombres auront rapidement tendance à être très grands.
+ En calculant, comme on le fait ici, d'abord le numérateur, puis ensuite le dénominateur, on prend le risque de demander à la machine de stocker des nombres trop grands pour qu'elle soit capable de les coder.
+  C'est d'autant plus bête que rien ne nous oblige à procéder ainsi : on n'est pas obligé de passer par la division de deux très grands nombres pour obtenir le résultat voulu.
+
+La deuxième remarque est qu'on a programmé ici trois boucles successives. 
+Or, en y regardant bien, on peut voir qu'après simplification de la formule, ces trois boucles comportent le même nombre de tours .
